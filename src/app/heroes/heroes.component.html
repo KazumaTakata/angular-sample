@@ -1,0 +1,20 @@
+<p>
+  {{message}}
+</p>
+
+<form [formGroup]="form">
+<input formControlName="title"/>
+<input formControlName="author"/>
+</form>
+
+<button (click)="onClick()">
+    add hero!!
+</button>
+
+
+
+<ul>
+  <li *ngFor="let hero of heroes">
+    {{hero.title}} 
+  </li>
+</ul>
